@@ -1,0 +1,10 @@
+spring:
+  liquibase:
+    change-log: classpath:liquibase/changelog-master.yml
+  datasource:
+    url: jdbc:postgresql://localhost:5433/transaction
+    username: user
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
